@@ -39,7 +39,7 @@ public class Timers : MonoBehaviour {
         exhaustTime = 210f;
         flashTime = 300f;
         ghostTime = 180f;
-        healTime = 240f;
+        healTime = 270f;
         igniteTime = 210f;
         teleportTime = 300f;
         smiteTime = 0f;
