@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// attach to spell images
+// set spell of target lane
+
 public class SpellPanel : MonoBehaviour {
-
-
     public static Timers targetLane;
-
-
 
     public void SetBarrier()
     {
@@ -53,5 +52,4 @@ public class SpellPanel : MonoBehaviour {
     {
         targetLane.SetSmite();
     }
-
 }

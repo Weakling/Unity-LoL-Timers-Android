@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// attach to letter buttons
+// activates champion icon panel
+
 public class LetterButton : MonoBehaviour {
 
     MyManager myManager;
@@ -12,12 +15,10 @@ public class LetterButton : MonoBehaviour {
         myManager = FindObjectOfType<MyManager>();
     }
     
-
-
     public void MyLetterClick()
     {
-        myManager.championPanelCtr = pagePosition;
-        myManager.championPanelsArray[pagePosition].SetActive(true);
-        myManager.championPanelsArray[0].SetActive(false);
+        myManager.championPanelCtr = pagePosition;                      // set destination panel
+        myManager.championPanelsArray[pagePosition].SetActive(true);    // activate destination panel champion page
+        myManager.championPanelsArray[0].SetActive(false);              // disable letter panel
     }
 }

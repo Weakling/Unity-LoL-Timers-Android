@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Attach to Champ/Lane selection icons
+// Click to swap icon and close panel
+
 public class ChampIconButton : MonoBehaviour {
 
     private MyManager myManager;
@@ -14,10 +17,9 @@ public class ChampIconButton : MonoBehaviour {
 
     public void MyClick()
     {
-        //myManager.panelTimers02.SetActive(true);
-        MyManager.currentChampIcon = this.GetComponent<Image>().sprite;
-        myManager.ChampIconSwap();
-        myManager.championPanelsArray[myManager.championPanelCtr].gameObject.SetActive(false);
-        myManager.championPanelCtr = 0;
+        MyManager.currentChampIcon = this.GetComponent<Image>().sprite;                         // set as new icon target
+        myManager.ChampIconSwap();                                                              // set image to icon target
+        myManager.championPanelsArray[myManager.championPanelCtr].gameObject.SetActive(false);  // turn off panel
+        myManager.championPanelCtr = 0;                                                         // select panel 0
     }
 }

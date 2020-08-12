@@ -2,23 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Attach to Lane Icon
+// Click to set as current icon in MyManager
+// Opens Champion Menu
+
 public class LaneIconButton : MonoBehaviour {
-
-
     MyManager myManager;
 
     private void Awake()
     {
         myManager = FindObjectOfType<MyManager>();
     }
-    // Use this for initialization
-    void Start() {
-
-    }
-
+    
     public void LaneIconClick()
     {
         MyManager.currentLaneIcon = this.gameObject;
-        myManager.ChampionMenuOpen();
+        if(MyManager.editMenuOn)
+        {
+            myManager.ChampionMenuOpen();
+        }
     }
 }

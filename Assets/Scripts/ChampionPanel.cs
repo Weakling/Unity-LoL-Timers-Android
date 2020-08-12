@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// currently does nothing
+
 public class ChampionPanel : MonoBehaviour {
 
-
+    /*
     MyManager myManager;
 
     private void Awake()
     {
         myManager = FindObjectOfType<MyManager>();
     }
-	
 
     public void Up()
     {
@@ -31,5 +32,5 @@ public class ChampionPanel : MonoBehaviour {
             myManager.championPanelsArray[myManager.championPanelCtr].SetActive(true);
             this.transform.gameObject.SetActive(false);
         }
-    }
+    }*/
 }

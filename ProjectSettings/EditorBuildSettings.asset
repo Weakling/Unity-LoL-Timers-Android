@@ -6,5 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Current Timers.unity
-    guid: bcf64a0de8e3b1546b401237f0580711
+    path: Assets/Scenes/Desktop Timers.unity
+    guid: 7d0e16ad92cbbf543a626d8f84c759b6
+  m_configObjects: {}
